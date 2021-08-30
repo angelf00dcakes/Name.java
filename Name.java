@@ -1,37 +1,45 @@
 class Name{
-	private First;
-	private Middle;
-	private Last;
+	private String first;
+	private String middle;
+	private String last;
 
 	public Name(String theFirst, String theMiddle, String theLast){
-	First = theFirst;
-	Middle = theMiddle;
-	Last = theLast;
+		first = theFirst;
+		middle = theMiddle;
+		last = theLast;
 	}
 
-public Name(String theFirst, String thelastName){
-	First = theFirst;
-	Middle = "" ;
-	Last = theLast;
+	public Name(String theFirst, String thelastName){
+		first = theFirst;
+		middle = "";
+		last = thelastName;
 	}
 
-	public String getFirst{
-	return First;
+	public String getFirst(){
+		return first;
 	}
-	public String getMiddle{
-	return Middle;
+	public String getMiddle(){
+		return middle;
 	}
-	public String getLast{
-	return Last;
+	public String getLast(){
+		return last;
 	}
 	public static void setFirst(String theFirst){
-	First = theFirst;
+		first = theFirst;
 	}
 	public static void setMiddle(String theMiddle){
-	Middle = theMiddle;
+		middle = theMiddle;
 	}
 	public static void setLast(String theLast){
-	Last = theLast;
+		last = theLast;
 	}
 
+	public String toString()
+{
+	if(middle.isEmpty()){
+		return first + " " + last;
+	}else{
+		return first + " " + middle + " " + last;
+	}
+}
 }
