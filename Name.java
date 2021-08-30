@@ -1,35 +1,37 @@
 class Name{
-	private firstName;
-	private middleName;
-	private lastName;
+	private First;
+	private Middle;
+	private Last;
 
-	public Name(String thefirstName, String themiddleName, String thelastName){
-	firstName = thefirstName;
-	middleName = themiddleName;
-	lastName = thelastName;
-	}
-
-public Name(String thefirstName, String thelastName){
-	firstName = thefirstName;
-	middleName = "" ;
-	lastName = thelastName;
+	public Name(String theFirst, String theMiddle, String theLast){
+	First = theFirst;
+	Middle = theMiddle;
+	Last = theLast;
 	}
 
-	public String getfirstName{
-	return firstName;
+public Name(String theFirst, String thelastName){
+	First = theFirst;
+	Middle = "" ;
+	Last = theLast;
 	}
-	public String getmiddleName{
-	return middleName;
+
+	public String getFirst{
+	return First;
 	}
-	public String getlastName{
-	return lastName;
+	public String getMiddle{
+	return Middle;
 	}
-	public static void setfirstName(String thefirstName){
-	firstName = thefirstName;
+	public String getLast{
+	return Last;
 	}
-	public static void setmiddleName(String themiddleName){
-	middleName = themiddleName;
+	public static void setFirst(String theFirst){
+	First = theFirst;
 	}
-	public static void setlastName(String thelastName){
-	firstName = thelastName;
+	public static void setMiddle(String theMiddle){
+	Middle = theMiddle;
 	}
+	public static void setLast(String theLast){
+	Last = theLast;
+	}
+
+}
