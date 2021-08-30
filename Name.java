@@ -1,4 +1,4 @@
-class Name{
+public class Name{
 	private String first;
 	private String middle;
 	private String last;
@@ -24,22 +24,22 @@ class Name{
 	public String getLast(){
 		return last;
 	}
-	public static void setFirst(String theFirst){
+	public void setFirst(String theFirst){
 		first = theFirst;
 	}
-	public static void setMiddle(String theMiddle){
+	public void setMiddle(String theMiddle){
 		middle = theMiddle;
 	}
-	public static void setLast(String theLast){
+	public void setLast(String theLast){
 		last = theLast;
 	}
 
-	public String toString()
-{
-	if(middle.isEmpty()){
-		return first + " " + last;
-	}else{
-		return first + " " + middle + " " + last;
+	public String toString(){
+		if(middle.isEmpty()){
+			return first + " " + last;
+		}else{
+			return first + " " + middle + " " + last;
+		}
 	}
-}
+
 }
